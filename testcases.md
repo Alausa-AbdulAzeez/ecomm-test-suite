@@ -6,7 +6,7 @@
 
 | **ID** | **Title**                                    | **Pre-Condition**          | **Steps**                                                         | **Expected Result**                                       | **Status** |
 | ------ | -------------------------------------------- | -------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------- | ---------- |
-| TC001  | Standard user - valid login                  | User is on login page      | Enter `standard_user` + `secret_sauce` → Click Login              | Redirected to inventory page                              | Not Run    |
+| TC001  | Standard user - valid login                  | User is on login page      | Enter `standard_user` + `secret_sauce` → Click Login              | Redirected to inventory page                              | Passed    |
 | TC002  | Standard user - incorrect password           | User is on login page      | Enter `standard_user` + wrong password → Click Login              | Do not redirect home and display an error message                                   | Not Run    |
 | TC003  | Standard user - empty password               | User is on login page      | Enter `standard_user` + empty password → Click Login              | Do not redirect home and display an error message                                   | Not Run    |
 | TC004  | Locked out user - valid login                | User is on login page      | Enter `locked_out_user` + `secret_sauce` → Click Login            | Error message: *"Sorry, this user has been locked out."*  | Not Run    |
