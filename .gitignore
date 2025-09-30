@@ -1,0 +1,23 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.DS_Store
+
+# --- Virtual Environment ---
+venv/
+.env/
+
+# --- Logs ---
+*.log
+
+# --- Selenium Drivers ---
+chromedriver
+geckodriver
+msedgedriver
+
+# --- IDEs ---
+.vscode/
+.idea/
