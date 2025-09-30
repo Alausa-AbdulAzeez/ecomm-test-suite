@@ -8,7 +8,7 @@ def test_valid_login(driver):
     login_page.load_page()
 
     # Login
-    login_page.login("standard_user","secret_saucee")
+    login_page.login("standard_user","secret_sauce")
 
     # Confirm redirect
     assert "inventory.html" in driver.current_url, "❌ TC001 Failed:Did not redirect. Redirect to inventory page expected"
@@ -22,7 +22,7 @@ def test_invalid_login(driver):
     login_page.load_page()
 
     # Login
-    login_page.login("standard_user","secret_sauce")
+    login_page.login("standard_user","secret_saucee")
 
     # Confirm if user didnt get redirected
     assert "index.html" in driver.current_url, "❌ TC002 Failed: Did not stay on the login page."
