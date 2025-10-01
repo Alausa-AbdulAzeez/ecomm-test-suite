@@ -28,7 +28,17 @@ class LoginPage:
                 EC.visibility_of_element_located((By.XPATH, element))
             ).text
             return text
-        except :
+        except TimeoutException:
+            return False
+        
+    # General util function to get single element
+    def get_element(self,locator):
+        try:
+            element = self.wait.until(
+                EC.visibility_of_element_located((By.XPATH, locator))
+            )
+            return element
+        except TimeoutException:
             return False
 
             
