@@ -299,7 +299,7 @@ def test_password_case_sensitivity(driver):
     login_page.load_page()
 
     # Login (Invalid login to let the error message show)
-    login_page.login("standard_user","secret_sauce")
+    login_page.login("standard_user","Secret_Sauce")
 
     # Confirm if user didnt get redirected
     assert "index.html" in driver.current_url, "❌ TC017 Failed: Did not stay on the login page."
